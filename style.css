@@ -1,0 +1,133 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2835a7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-size: clamp(24px, 4vw, 0px);
+}
+
+
+
+.contenedor {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 20px 20px 20px  black;
+    max-width: 400px;
+    width: 100%;
+    background-color: rgb(226, 216, 216);
+}
+
+h1 {
+    font-size: 34px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(19, 17, 17);
+}
+
+#entrada-tarea::placeholder {
+    color: white;          
+    opacity: 1;    
+    text-align: center;   
+    
+
+}
+
+.entrada-container {
+    display: flex;
+    align-items: center;    
+      
+          
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #179deb;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-right: 5px;
+    outline: none;    
+    background-color: #242222;   
+    color: white;      
+}
+
+input[type="text"]:hover{
+    border: 3px solid #179deb;
+    background-color: #080808;
+}
+
+button {
+    padding: 14px;
+    background-color: #2835a7;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;           
+}
+
+button:hover {
+    background-color: #090b80;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #242222;
+    border: 2px solid #1670e6;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+    color: white;
+}
+
+li.completada {
+    background-color: black;
+    color: rgb(214, 191, 191);
+}
+
+
+
+
+
+
+
+
+.chequeo {
+    font-size: 20px; /* Ajusta el tamaño del ícono según lo necesites */
+    color: #ddd;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.chequeo.completado {
+    color: #28a745;
+}
+
+.boton-borrar {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px; /* Ajusta el tamaño del ícono según lo necesites */
+}
+
+.boton-borrar:hover {
+    color: #c82333;
+}
+
+.boton-borrar i {
+    color: #dc3545;
+}
